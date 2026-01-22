@@ -26,8 +26,9 @@ RegisterNumber: 212224230181
 
 import matplotlib.pyplot as plt
 
-X = [1, 2, 3, 4, 5]
-Y = [2, 4, 5, 4, 5]
+X = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Y = [2.2, 4.1, 6.0, 8.2, 9.9, 12.1, 14.0, 16.2, 18.1, 20.0,
+     26.0, 5.0]  
 
 n = len(X)
 
@@ -49,11 +50,15 @@ print(f"y = {m:.2f}x + {b:.2f}")
 
 plt.scatter(X, Y)
 plt.plot(X, y_pred)
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Line of Best Fit with Outliers")
 plt.show()
+
 ```
 
 ## Output:
-<img width="676" height="441" alt="image" src="https://github.com/user-attachments/assets/720622df-1f68-4a0c-a768-0759f4888ce5" />
+<img width="628" height="482" alt="image" src="https://github.com/user-attachments/assets/73f43c45-f105-44a5-8143-06e7d90e2d04" />
 
 
 
